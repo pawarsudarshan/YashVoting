@@ -14,7 +14,7 @@ function vote(id) {
     let votesInNumber = parseInt(votes) + 1;
     alert(voter + " voted for " + id);
     document.getElementById(id).innerHTML = votesInNumber;
-    document.getElementById('i1').innerHTML = "";
+    document.getElementById('i1').value = "";
 }
 
 function showHideResult() {
