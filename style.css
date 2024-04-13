@@ -1,0 +1,52 @@
+#hh1 {
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(234, 178, 49);
+    color: black;
+}
+
+.button1 {
+    background-color: rgb(83, 83, 205);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+table {
+    border: 2px solid grey;
+}
+
+td {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+th {
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+table {
+    text-align: center;
+}
+
+.button1:hover {
+    background-color: rgb(5, 5, 108);
+    color: rgb(201, 220, 230);
+    padding: 24px;
+    border-radius: 16px;
+    font-size: 24px;
+}
+
+#resultID {
+    display: none;
+}
+
+#clear {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
