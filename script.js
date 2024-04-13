@@ -2,6 +2,7 @@ let voterList = [];
 function vote(id) {
     let vorterRaw = document.getElementById('i1').value;
     let voter = vorterRaw.toLowerCase();
+    document.getElementById('i1').value = "";
     if (!voter) {
         alert("Please enter your name before voting!!");
         return false;
@@ -14,7 +15,6 @@ function vote(id) {
     let votesInNumber = parseInt(votes) + 1;
     alert(voter + " voted for " + id);
     document.getElementById(id).innerHTML = votesInNumber;
-    document.getElementById('i1').value = "";
 }
 
 function showHideResult() {
