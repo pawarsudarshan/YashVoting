@@ -1,9 +1,15 @@
+let voterList = [];
 function vote(id) {
-    let voter = document.getElementById('i1').value;
+    let vorterRaw = document.getElementById('i1').value;
+    let voter = vorterRaw.toLowerCase();
     if (!voter) {
         alert("Please enter your name before voting!!");
         return false;
+    } else if (voterList.includes(voter)) {
+        alert("You already voted. Thank You!!");
+        return false;
     }
+    voterList.push(voter);
     let votes = document.getElementById(id).innerHTML;
     let votesInNumber = parseInt(votes) + 1;
     alert(voter + " voted for " + id);
