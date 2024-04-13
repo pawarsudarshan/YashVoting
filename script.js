@@ -1,7 +1,12 @@
 function vote(id) {
+    let voter = document.getElementById('i1').value;
+    if (!voter) {
+        alert("Please enter your name before voting!!");
+        return false;
+    }
     let votes = document.getElementById(id).innerHTML;
     let votesInNumber = parseInt(votes) + 1;
-    // alert("You voted for " + id);
+    alert(voter + " voted for " + id);
     document.getElementById(id).innerHTML = votesInNumber;
 }
 
